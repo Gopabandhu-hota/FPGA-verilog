@@ -1,0 +1,25 @@
+xst -intstyle ise -ifn "G:/FPGA/pwm_simulation/pwm_simulation.xst" -ofn "G:/FPGA/pwm_simulation/pwm_simulation.syr" 
+xst -intstyle ise -ifn "G:/FPGA/pwm_simulation/pwm_simulation.xst" -ofn "G:/FPGA/pwm_simulation/pwm_simulation.syr" 
+xst -intstyle ise -ifn "G:/FPGA/pwm_simulation/pwm_simulation.xst" -ofn "G:/FPGA/pwm_simulation/pwm_simulation.syr" 
+xst -intstyle ise -ifn "G:/FPGA/pwm_simulation/pwm_simulation.xst" -ofn "G:/FPGA/pwm_simulation/pwm_simulation.syr" 
+xst -intstyle ise -ifn "G:/FPGA/pwm_simulation/pwm_simulation.xst" -ofn "G:/FPGA/pwm_simulation/pwm_simulation.syr" 
+xst -intstyle ise -ifn "G:/FPGA/pwm_simulation/pwm_simulation.xst" -ofn "G:/FPGA/pwm_simulation/pwm_simulation.syr" 
+xst -intstyle ise -ifn "G:/FPGA/pwm_simulation/pwm_simulation.xst" -ofn "G:/FPGA/pwm_simulation/pwm_simulation.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-csg324-2 pwm_simulation.ngc pwm_simulation.ngd  
+map -intstyle ise -p xc6slx9-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o pwm_simulation_map.ncd pwm_simulation.ngd pwm_simulation.pcf 
+par -w -intstyle ise -ol high -mt off pwm_simulation_map.ncd pwm_simulation.ncd pwm_simulation.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml pwm_simulation.twx pwm_simulation.ncd -o pwm_simulation.twr pwm_simulation.pcf 
+xst -intstyle ise -ifn "G:/FPGA/pwm_simulation/pwm_simulation.xst" -ofn "G:/FPGA/pwm_simulation/pwm_simulation.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-csg324-2 pwm_simulation.ngc pwm_simulation.ngd  
+map -intstyle ise -p xc6slx9-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o pwm_simulation_map.ncd pwm_simulation.ngd pwm_simulation.pcf 
+par -w -intstyle ise -ol high -mt off pwm_simulation_map.ncd pwm_simulation.ncd pwm_simulation.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml pwm_simulation.twx pwm_simulation.ncd -o pwm_simulation.twr pwm_simulation.pcf 
+vhdtdtfi -lib work G:/FPGA/pwm_simulation/pwm_simulation.v -lang verilog -prj pwm_simulation -o pwm_simulation.spl -module pwm_simulation -template G:/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 pwm_simulation.spl G:/FPGA/pwm_simulation/pwm_simulation.sym 
+bitgen -intstyle ise -f pwm_simulation.ut pwm_simulation.ncd 
+xst -intstyle ise -ifn "G:/FPGA/pwm_simulation/pwm_simulation.xst" -ofn "G:/FPGA/pwm_simulation/pwm_simulation.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc aa.ucf -p xc6slx9-csg324-2 pwm_simulation.ngc pwm_simulation.ngd  
+map -intstyle ise -p xc6slx9-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o pwm_simulation_map.ncd pwm_simulation.ngd pwm_simulation.pcf 
+par -w -intstyle ise -ol high -mt off pwm_simulation_map.ncd pwm_simulation.ncd pwm_simulation.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml pwm_simulation.twx pwm_simulation.ncd -o pwm_simulation.twr pwm_simulation.pcf -ucf aa.ucf 
+bitgen -intstyle ise -f pwm_simulation.ut pwm_simulation.ncd 

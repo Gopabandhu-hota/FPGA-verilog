@@ -1,0 +1,8 @@
+[Inputs]
+clk
+[Outputs]
+pwm
+[BiDir]
+[ATTRIBUTES]
+VeriModel pwm_simulation
+

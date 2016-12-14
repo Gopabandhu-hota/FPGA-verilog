@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "G:/FPGA/pwm_simulation/pwm_simulation_isim_beh.exe" -prj "G:/FPGA/pwm_simulation/pwm_simulation_beh.prj" "work.pwm_simulation" "work.glbl" 

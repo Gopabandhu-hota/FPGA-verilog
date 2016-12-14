@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=G:\FPGA\pwm_simulation\pwm_simulation.ncd
+OUTFILE=G:\FPGA\pwm_simulation\pwm_simulation.bit
+FAMILY=Spartan6
+PART=xc6slx9-2csg324
+WORKINGDIR=G:\FPGA\pwm_simulation
+LICENSE=WebPack
+USER_INFO=211279202_0_0_370
