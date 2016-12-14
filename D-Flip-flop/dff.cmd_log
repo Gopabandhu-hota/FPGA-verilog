@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "G:/FPGA/Modules/D-flip-flop/dff.xst" -ofn "G:/FPGA/Modules/D-flip-flop/dff.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-csg324-2 dff.ngc dff.ngd  
+map -intstyle ise -p xc6slx9-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dff_map.ncd dff.ngd dff.pcf 
+par -w -intstyle ise -ol high -mt off dff_map.ncd dff.ncd dff.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml dff.twx dff.ncd -o dff.twr dff.pcf 
