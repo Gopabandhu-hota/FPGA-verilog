@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "G:/FPGA/Modules/uart/uart_receiver_isim_beh.exe" -prj "G:/FPGA/Modules/uart/uart_receiver_beh.prj" "uart_receiver" "work.glbl" 

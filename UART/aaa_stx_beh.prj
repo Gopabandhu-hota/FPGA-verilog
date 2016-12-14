@@ -1,0 +1,3 @@
+verilog isim_temp "uart.v"
+verilog isim_temp "aaa.v"
+verilog isim_temp "G:/14.7/ISE_DS/ISE//verilog/src/glbl.v"
